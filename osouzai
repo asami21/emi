@@ -1,0 +1,234 @@
+<!--------------------ここから商品登録画面>商品ページ表示情報入力>商品情報1に貼り付けてください------------------>				
+				
+				
+				
+				
+<div id="productinfo">
+				
+				
+        <!--①商品情報-->
+        <section id="foodlabel" class="inner generalsec">
+	        <table>
+		        <tr>
+			        <th>内容量</th>
+			        <td>65g</td>
+		        </tr>
+		        <tr>
+			        <th>原材料名</th>
+			        <td>山椒、白味噌</td>
+		        </tr>
+		        <tr>
+			        <th>アレルギー情報</th>
+			        <td>なし</td>
+		        </tr>
+		        <tr>
+			        <th>保管方法</th>
+			        <td>冷蔵庫で保管してください。</td>
+		        </tr>
+		        <tr>
+			        <th>お日持ち</th>
+			        <td>冷蔵庫で2週間、冷凍庫で1ヶ月 ※開封後はお早めにお召し上がりください。</td>
+		        </tr>
+	        </table>
+        </section>
+				<!--//①商品情報-->
+				
+				
+				
+				
+				<!--②冒頭部分 説明箇所-->
+				<section id="intro" class="inner generalsec">
+					<p class="normal_text">内容をリニューアルし、山椒の量を増やしました。<br>
+          しま村の白味噌をたっぷり使い、しっとりと仕上げました。<br>
+          京都らしいはんなりとした味わいをお好みの方はこちらをお勧めいたします。</p>
+				</section>
+				<!--//②冒頭部分 説明箇所-->
+
+
+
+
+				<!--⑤読み物-->
+				<section id="image_text" class="inner generalsec">
+					<!--1)ここから-->
+					<div class="i_t_section">
+						<p><img src="https://kamp.design/gokansyokuraku/images/product/p1.jpg" alt="鼻先にんじんドレッシング"></p>
+						<h3>良いものだけを詰め込んだドレッシング</h3>
+						<p>有機にんじん、淡路の新玉ねぎ、千鳥酢、太白ごま油で作りました。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。</p>
+					</div>
+					<!--1)ここまで-->
+										
+					<!--2)ここから-->
+					<div class="i_t_section">
+						<p><img src="https://kamp.design/gokansyokuraku/images/product/p2.jpg" alt="画像の説明テキスト"></p>
+						<h3>こだわりタイトルタイトル</h3>
+						<p>生産者の〇〇さん。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。</p>
+					</div>
+					<!--2)ここまで-->
+					
+					<!--3)ここから-->
+					<div class="i_t_section">
+						<p><img src="https://kamp.design/gokansyokuraku/images/product/p3.jpg" alt="画像の説明テキスト"></p>
+						<h3>ドレッシングとしてサラダのおともに!</h3>
+						<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。冷蔵庫で保存してください。</p>
+					</div>
+					<!--3)ここから-->
+					
+					<!--4)ここから-->
+					<div class="i_t_section">
+						<p><img src="https://kamp.design/gokansyokuraku/images/product/p3.jpg" alt="画像の説明テキスト"></p>
+						<h3>ドレッシングとしてサラダのおともに!</h3>
+						<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。冷蔵庫で保存してください。</p>
+					</div>
+					<!--4)ここから-->
+				</section>
+				<!--//⑤読み物-->
+				
+
+
+				<!--⑦流れ-->
+				<section id="flow" class="inner generalsec">
+					<h2 class="product_t"><span>お申し込みからお受け取りまでの流れ</span></h2>
+				  <ul class="flowlist">
+					  <li>
+					    <p class="flowimg"><img src="https://image.raku-uru.jp/01/8476/729/flow1_1621480675554.jpg" alt="画像の説明テキスト"></p>
+					    <dl class="flow_text">
+					      <dt><span>01</span>ご注文</dt>
+					      <dd>食材を受け取る日にちをご選択ください。他のお惣菜もご一緒にお求めいただけます。<br>※お申し込みは毎月1日０時よりスタートします。</dd>
+					    </dl>
+					  </li>
+					  <li>
+					    <p class="flowimg"><img src="https://image.raku-uru.jp/01/8476/727/flow3_1621480674828.jpg" alt="画像の説明テキスト"></p>
+					    <dl class="flow_text">
+					      <dt><span>02</span>荷物のお受け取り</dt>
+					      <dd>クロネコヤマトさんにて荷物をお送りいたします。受け取り後、中身の確認をお願いします。</dd>
+					    </dl>
+					  </li>
+				  </ul>
+				</section>
+				<!--//⑦流れ-->
+
+
+
+
+
+				<!--⑧よくあるご質問-->
+				<section id="faq" class="inner generalsec">
+					<h2 class="product_t"><span>よくあるご質問</span></h2>
+					<dl class="faqlist">
+						
+						<!--質問1ここから-->
+						<dt>質問テキストテキストテキストテキストテキスト？</dt>
+						<dd>答えテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+テキストテキストテキストテキストテキストテキスト</dd>
+						<!--質問1ここまで-->
+
+						<!--質問2ここから-->
+						<dt>質問テキストテキストテキストテキストテキスト？</dt>
+						<dd>答えテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+テキストテキストテキストテキストテキストテキスト</dd>
+						<!--質問2ここから-->
+						
+						<!--質問3ここから-->
+						<dt>質問テキストテキストテキストテキストテキスト？</dt>
+						<dd>答えテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+テキストテキストテキストテキストテキストテキスト</dd>
+						<!--質問3ここから-->
+						
+						<!--質問4ここから-->
+						<dt>質問テキストテキストテキストテキストテキスト？</dt>
+						<dd>答えテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+テキストテキストテキストテキストテキストテキスト</dd>
+						<!--質問4ここから-->
+						
+					</dl>
+				</section>
+				<!--//⑧よくあるご質問-->
+
+
+
+
+
+				<!--⑨お客様の声-->
+				<section id="voice" class="inner generalsec">
+					<h2 class="product_t"><span>お客様の声</span></h2>
+					<p class="voice_text"><span>京都府 のりたま様　40代　女性</span>【冷蔵庫に常備しています】 もう何度リピートしたことか。 いつもオンラインレッスンを注文するたびに、色白さんもクリックしちゃいます。<br> 
+          絶妙な味付けでふっくらしっとりと炊きあげたおじゃこ、これをご飯に混ぜておにぎりにして昼食に頂くのがいつものコースです。 いつも我が家の冷蔵庫に常備してある、大事な一品です。 </p>
+				</section>
+				<!--//⑨お客様の声-->
+
+
+
+
+
+				<!--11.おすすめ商品ここから-->
+				<section id="recommend" class="inner generalsec">
+					<h2 class="mincho recommend_t">おすすめ商品</h2>
+					<ul class="recommendlist">
+						
+						<!--商品1ここから-->
+						<li><a href="https://gokan-shokuraku-shop.com/item-detail/574721">
+						  <p><img src="https://image.raku-uru.jp/01/8476/292/名称未設定のデザイン_1601426579061.png" alt="梅明太子パスタ（レシピ、動画、食材付）"></p>
+						  <p class="name">梅明太子パスタ（レシピ、動画、食材付）</p>
+						  <p class="price">3,850円<span>(税込)</span></p>
+						</a></li>
+						<!--商品1ここまで-->
+						
+						<!--商品2ここから-->
+						<li><a href="https://gokan-shokuraku-shop.com/item-detail/868733">
+						  <p><img src="https://image.raku-uru.jp/01/8476/644/unnamed-1_1619710329596.jpg" alt="【6月22日発送】仕出し（2人前7品）"></p>
+						  <p class="name">【6月22日発送】仕出し（2人前7品）</p>
+						  <p class="price">12,000円<span>(税込)</span></p>
+						</a></li>
+						<!--商品2ここまで-->
+						
+						<!--商品3ここから-->
+						<li><a href="https://gokan-shokuraku-shop.com/item-detail/762392">
+						  <p><img src="https://image.raku-uru.jp/01/8476/748/6月オンライン_1621893822127.jpg" alt="6月オンラインレッスン5品（レシピ、動画、食材付）"></p>
+						  <p class="name">6月オンラインレッスン5品（レシピ、動画、食材付）</p>
+						  <p class="price">11,000円<span>(税込)</span></p>
+						</a></li>
+						<!--商品3ここまで-->
+						
+						<!--商品4ここから-->
+						<li><a href="https://gokan-shokuraku-shop.com/item-detail/395163">
+						  <p><img src="https://image.raku-uru.jp/01/8476/41/EC920B5D-9892-445F-98FD-DBA1F1714989_1591941515803.jpeg" alt="色白さん(ちりめん山椒白味噌)"></p>
+						  <p class="name">色白さん(ちりめん山椒白味噌)</p>
+						  <p class="price">1,080円<span>(税込)</span></p>
+						</a></li>
+						<!--商品4ここまで-->
+						
+					</ul>
+				</section>
+				<!--//11.おすすめ商品-->
+
+
+
+
+</div>
+
+
+<!--------------------//ここまで商品登録画面>商品ページ表示情報入力>商品情報1に貼り付けてください------------------>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</div><!--//product-->
+		</div><!--//main-->
+	</div><!--//wrapper-->
+</main>

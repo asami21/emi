@@ -74,7 +74,35 @@
 				<!--//⑦流れ-->
 
 
-
+<!--③仕出しの特徴-->
+				<section id="features" class="inner generalsec">
+					<h2 class="product_t"><span>オンラインライブご参加のお願い</span></h2>
+					<div class="features_container">
+						<p class="featuresimg"><span><img src="https://kamp.design/gokansyokuraku/images/sub/num1.svg" alt="1"></span><img src="https://image.raku-uru.jp/01/8476/810/flow2_1621480675226_1622389832478.png" alt="管理栄養士監修"></p>
+						<div class="featurestext">
+						  <p class="features_title mincho">当日の参加方法 </p>
+							<p class="features_text">スマホ、タブレット、PCのいずれかから、レッスン前日までにお送りするメールに記載しておりますURLをクリックしお入りください。<br>
+レッスン開始の30分前よりお入りいただけます。お名前を確認するため、必ずレッスン開始の10分前までに入室をお願いします。 <br>
+ZOOMを初めて利用する方、当日心配な方向けにレッスン開始1時間前に入室チェックを行います。ご希望の方はレッスンの前日までに gokan.shokuraku021@gmail.comまでご連絡ください。 </p>
+					  </div>
+					</div>
+					<div class="features_container">
+						<p class="featuresimg"><span><img src="https://kamp.design/gokansyokuraku/images/sub/num2.svg" alt="2"></span><img src="https://image.raku-uru.jp/01/8476/725/feature1_1621480674153.png" alt="30種類以上の食材を使用"></p>
+						<div class="featurestext">
+						  <p class="features_title mincho">お名前をご確認ください</p>
+							<p class="features_text">参加の際、ZOOMに表示されるお名前とお申し込みをされた方のお名前が一致した方から入室許可致します。必ずお申し込みされたお名前でご入室ください。お名前が異なる場合、許可を致しかねますのでご了承ください。</p>
+					  </div>
+					</div>
+					<div class="features_container">
+						<p class="featuresimg"><span><img src="https://kamp.design/gokansyokuraku/images/sub/num3.svg" alt="3"></span><img src="https://image.raku-uru.jp/01/8476/723/feature3_1621480673359.png" alt="京都のお味をご家庭で"></p>
+						<div class="featurestext">
+						  <p class="features_title mincho">参加中は</p>
+							<p class="features_text">録画録音、動画URLの無断共有、SNSでの内容公開などはおやめください。<br>音声はミュートにしていただき、ご質問はチャットにてお受けいたします。（※時間の都合により全ての質問にお答えできない場合がございます）</p>
+					  </div>
+					</div>
+					</section>
+				
+				<!--//③仕出しの特徴-->
 
 
 				<!--⑨お客様の声-->
@@ -153,41 +181,11 @@
 				<!--//11.おすすめ商品-->
 
 
-<!--③仕出しの特徴-->
-				<section id="features" class="inner generalsec">
-					<h2 class="product_t"><span>オンラインライブご参加のお願い</span></h2>
-					<div class="features_container">
-						<p class="featuresimg"><span><img src="https://kamp.design/gokansyokuraku/images/sub/num1.svg" alt="1"></span><img src="https://image.raku-uru.jp/01/8476/810/flow2_1621480675226_1622389832478.png" alt="管理栄養士監修"></p>
-						<div class="featurestext">
-						  <p class="features_title mincho">当日の参加方法 </p>
-							<p class="features_text">スマホ、タブレット、PCのいずれかから、レッスン前日までにお送りするメールに記載しておりますURLをクリックしお入りください。<br>
-　　　　　　　　　　　　　　　　　　　レッスン開始の30分前よりお入りいただけます。お名前を確認するため、必ずレッスン開始の10分前までに入室をお願いします。 <br>
-　　　　　　　　　　　　　　　　　　　ZOOMを初めて利用する方、当日心配な方向けにレッスン開始1時間前に入室チェックを行います。ご希望の方はレッスンの前日までに gokan.shokuraku021@gmail.comまでご連絡ください。 </p>
-					  </div>
-					</div>
-					<div class="features_container">
-						<p class="featuresimg"><span><img src="https://kamp.design/gokansyokuraku/images/sub/num2.svg" alt="2"></span><img src="https://image.raku-uru.jp/01/8476/725/feature1_1621480674153.png" alt="30種類以上の食材を使用"></p>
-						<div class="featurestext">
-						  <p class="features_title mincho">お名前をご確認ください</p>
-							<p class="features_text">参加の際、ZOOMに表示されるお名前とお申し込みをされた方のお名前が一致した方から入室許可致します。必ずお申し込みされたお名前でご入室ください。お名前が異なる場合、許可を致しかねますのでご了承ください。</p>
-					  </div>
-					</div>
-					<div class="features_container">
-						<p class="featuresimg"><span><img src="https://kamp.design/gokansyokuraku/images/sub/num3.svg" alt="3"></span><img src="https://image.raku-uru.jp/01/8476/723/feature3_1621480673359.png" alt="京都のお味をご家庭で"></p>
-						<div class="featurestext">
-						  <p class="features_title mincho">参加中は</p>
-							<p class="features_text">録画録音、動画URLの無断共有、SNSでの内容公開などはおやめください。<br>音声はミュートにしていただき、ご質問はチャットにてお受けいたします。（※時間の都合により全ての質問にお答えできない場合がございます）</p>
-					  </div>
-					</div>
-					</section></div>
-				
-				<!--//③仕出しの特徴-->
 
 
 
+</div>
 
 <!--------------------//ここまで商品登録画面>商品ページ表示情報入力>商品情報1に貼り付けてください------------------>	
-
-
 
 

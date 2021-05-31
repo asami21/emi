@@ -1,0 +1,426 @@
+<div class="main">
+	<div class="video-container" style="width: 100%;">
+		<video playsinline autoplay loop autoplay muted class="obj">
+			<!-- mp4 -->
+			<source src="https://contents.raku-uru.jp/01/8476/753/mainmovie_1621564860019_1621995443490.mp4" type='video/mp4' />
+			<!-- webm -->
+			<!--<source src="https://www.gokan-shokuraku.com/video/webtopfix_kohira.webm" type='video/webm' />
+			<!-- ogg -->
+			<!--<source src="https://www.gokan-shokuraku.com/video/webtopfix_kohira.ogv" type='video/ogv' />-->
+Sorry, but it seems like your browser doesnt support HTML5 video.
+    </video>
+		<div class="concepttext">
+			<p class="mgt0">価値観を信じて、心に響く自分だけの贅沢さを<br class="pc">たくさん取り入れていける日々でありたい。</p>
+		  <p>特別な日よりも、毎日が健やかで甘美な心地になるよう、<br class="pc">お手伝いが出来る場となりますように。</p>
+		</div>			
+  </div>
+  <section id="news" class="inner">
+	  <h2 class="title_border en"><span>INFORMATION</span></h2>
+	  <div class="newslist">
+			{% for item in freepageList %}
+       <p><a href="/fr/{{ item.freepageSerialNo }}"><span>{{ item.updateTime }}</span>{{ item.title }}</a></p>
+      {% endfor %}  
+	  </div>
+  </section>    
+  <section  id="newitem" class="inner generalsec">	  	  
+	  <h2 class="maintitle">新着商品</h2>
+
+
+	  
+<!-- ▼▼▼ 新着商品 ▼▼▼ -->	 
+		{% if dsnTopDispFlagNewItem == 1 and itemRecentList is not empty %} 
+	  <ul class="product04">
+		  {% for item in itemRecentList %}
+		  <li>
+		    <p><a href="/item-detail/{{ item.itemId }}"><img src="{{ item.mediaUrl }}" alt="{{ item.itemName }}"></a></p>
+		    <h3 class="name"><a href="/item-detail/{{ item.itemId }}">{{ item.itemName }}</a></h3>
+		    <p class="price">{{ item.displayPrice }}<span>(税込)</span></p>
+		  </li>
+		  {% endfor %}
+	  </ul>
+	  {% endif %}
+<!-- ▲▲▲ 新着商品 ▲▲▲ --> 	
+
+
+
+  
+	  <p class="morelink"><a href="https://gokan-shokuraku-shop.com/item-list?sortKind=3">商品一覧</a></p>
+  </section>     
+  <section id="catogory" class="generalsec">
+	  <div class="inner">
+		  <h3 class="title_border en"><span>CATEGORY</span></h3>
+		  
+		  
+	
+	
+	<!-- ▼▼▼ カテゴリ ▼▼▼ -->		  
+		  <ul class="catelist">
+			  <li>
+			    <a href="#lesson">
+				    <span class="cate_img"><img src="https://image.raku-uru.jp/01/8476/708/cate_lesson_1621401399037.jpg" alt="対面レッスン"></span>
+				    <span class="cate_name">対面レッスン</span>
+			    </a>
+			  </li>
+			  <li>
+			    <a href="#onlinelesson">
+				    <span class="cate_img"><img src="https://image.raku-uru.jp/01/8476/707/cate_onlinelesson_1621401398723.jpg" alt="オンラインレッスン"></span>
+				    <span class="cate_name">オンラインレッスン</span>
+			    </a>
+			  </li>
+			  <li>
+			    <a href="#osouzai">
+				    <span class="cate_img"><img src="https://image.raku-uru.jp/01/8476/706/cate_osouzai_1621401398412.jpg" alt="お惣菜"></span>
+				    <span class="cate_name">五感食楽の手づくり</span>
+			    </a>
+			  </li>
+			  <li>
+			    <a href="#product">
+				    <span class="cate_img"><img src="https://image.raku-uru.jp/01/8476/705/cate_product_1621401398084.jpg" alt="あるとうれしい台所の味方"></span>
+				    <span class="cate_name">あるとうれしい台所の味方</span>
+			    </a>
+			  </li>
+			  <li>
+			    <a href="#shidashi">
+				    <span class="cate_img"><img src="https://image.raku-uru.jp/01/8476/704/cate_shidashi_1621401397774.jpg" alt="仕出し"></span>
+				    <span class="cate_name">仕出し</span>
+			    </a>
+			  </li>
+			  <li>
+			    <a href="#book">
+				    <span class="cate_img"><img src="https://image.raku-uru.jp/01/8476/709/cate_book_1621401399372.jpg" alt="書籍"></span>
+				    <span class="cate_name">書籍</span>
+			    </a>
+			  </li>
+		  </ul>
+	<!-- ▲▲▲ カテゴリ ▲▲▲ --> 	  
+		  
+		  
+		  
+	  </div>
+  </section>
+  <section id="about" class="generalsec">
+	  <h2 class="maintitle">五感食楽について</h2>
+	  <div class="aboutcontainer about1">
+		  <div class="inner">
+			  <p class="aboutimg1 sp"><img src="https://image.raku-uru.jp/01/8476/712/about1_1621401401017.jpg" alt="五感を研ぎ澄ませてイメージ"></p>
+			  <div class="abouttext1">
+				  <h3 class="abouttitle">五感を研ぎ澄ませて</h3>
+				  <p>クレソンにはたっぷりの水に浸けてシャキッとさせてから青々しさをいただく。<br>ひきたてのおだしにはひとつまみのお塩でお澄ましに、揚げたてのおあげさんにはお醤油を垂らして香ばしさを楽しむ。<br>五感をフルに使って食材に触れることは、心地よいひと時です。</p>
+			  </div>
+		  </div>
+	  </div>
+	  <div class="aboutcontainer about2 inner">
+			<p class="aboutimg2"><img src="https://image.raku-uru.jp/01/8476/711/about2_1621401400547.jpg" alt="美味しい、楽しい、美しいを共有するイメージ"></p>
+		  <div class="abouttext2">
+			  <h3 class="abouttitle">美味しい、楽しい、<br class="sp">美しいを<br class="pc">共有する</h3>
+			  <p>どんな状況であっても、美味しい、楽しい、美しいと感動できる気持ちは持ち続けていたいものです。<br>食を通じて常にみずみずしい感性を育てておくことで、いつもの日常もより豊かで味わい深いものになると信じています。</p>
+		  </div>
+	  </div>
+	  <div class="aboutcontainer about3">
+		  <div class="inner">
+			  <h3 class="abouttitle">京都の知恵と始末を<br class="sp">大事にする</h3>
+			  <p>京都には古くから暮らしを豊かにする知恵、<br class="pc">つまり自然の恵みを慈しみ、<br class="pc">ものを大切にする始末の風習が根付いています。</p>
+			  <p>五感食楽では、未来への一助となることを願って<br class="pc">フードロス問題についても取り組んでいます。</p>
+		  </div>
+	  </div>
+  </section>
+  <section id="lesson" class="inner generalsec">
+	  <h2 class="maintitle">小平泰子料理教室について</h2>
+	  <p>旬を愛でるお料理教室。素材の持ち味を生かし、レシピを見なくても肩肘張らずにお家でさらっと作ってもらえるよう、シンプルなレシピ作りを心がけ、そしてお料理を楽しむコツをお教えします。</p>
+	  <div class="classlist">
+		  <div class="classcontainer">
+			  <p class="classimg"><a href="https://gokan-shokuraku-shop.com/item-list?categoryId=54630"><img src="https://image.raku-uru.jp/01/8476/687/kyouto_1621401389230.jpg" alt="京都教室"></a></p>
+			  <p class="classname"><a href="https://gokan-shokuraku-shop.com/item-list?categoryId=54630">京都教室</a></p>
+		  </div>
+		  <div class="classcontainer">
+			  <p class="classimg"><a href="https://gokan-shokuraku-shop.com/item-list?categoryId=54631"><img src="https://image.raku-uru.jp/01/8476/686/tokyo_1621401388737.jpg" alt="東京教室"></a></p>
+			  <p class="classname"><a href="https://gokan-shokuraku-shop.com/item-list?categoryId=54631">東京教室</a></p>
+		  </div>
+	  </div>
+	  <p class="morelink"><a href="https://gokan-shokuraku-shop.com/item-list?categoryId=30140"><span class="pc">対面レッスンの</span>お申し込みはこちら</a></p>
+  </section>     
+  <section id="onlinelesson" class="generalsec">
+	  <div class="inner">
+		  <h2 class="maintitle pcleft">オンラインレッスン</h2>
+		  <p class="categoryinfo">「お料理教室をお取り寄せ」。<br>オンラインレッスンでは、レシピに合った旬の京食材をご自宅にお届けするので、<br class="pc">動画やレシピを見ながらマイペースにレッスンすることが可能です。<br class="pc">遠方などで、通うのが困難な方にもオススメです。</p>
+		  <h3 class="title_border"><span>新着オンラインレッスン</span></h3>
+		  		  
+<!-- ▼▼▼ 新着オンラインレッスン ▼▼▼ --> 
+			{% if dsnTopDispFlagRanking == 1 and itemRecommendList is not empty %}		  		  
+		  <ul class="product04">
+			  {% for item in itemRecommendList %}
+			  <li>
+			    <p><a href="/item-detail/{{ item.itemId }}"><img src="{{ item.mediaUrl }}" alt="{{ item.itemName }}"></a></p>
+			    <h3 class="name"><a href="/item-detail/{{ item.itemId }}">{{ item.itemName }}</a></h3>
+			    <p class="price">{{ item.displayPrice }}<span>(税込)</span></p>
+			  </li>
+			  {% endfor %}
+		  </ul>
+		  {% endif %}
+<!-- ▲▲▲ 新着オンラインレッスン ▲▲▲ --> 
+
+		  		 		  
+		  
+		  <div class="lessonflow">
+			  <h3 class="title_bottomborder">お申し込みから<br class="sp">レッスンまでの流れ(食材付)</h3>
+			  <ul class="lessonflowlist">
+				  <li>
+				    <p class="lessonflowimg"><img src="https://image.raku-uru.jp/01/8476/729/flow1_1621480675554.jpg" alt="ご注文"></p>
+				    <h3>①ご注文</h3>
+				    <p>ご注文の際オンラインレッスンの商品を受け取る日にちをご選択ください。</p>
+				  </li>
+				  <li>
+				    <p class="lessonflowimg"><img src="https://image.raku-uru.jp/01/8476/728/flow2_1621480675226.jpg" alt="事前のご準備"></p>
+				    <h3>②事前のご準備</h3>
+				    <p>お受け取り日２日前までにレッスン動画、レシピのURLとQRコードをメールにてお送りします。</p>
+				  </li>
+				  <li>
+				    <p class="lessonflowimg"><img src="https://image.raku-uru.jp/01/8476/727/flow3_1621480674828.jpg" alt="お受け取り"></p>
+				    <h3>③お受け取り</h3>
+				    <p>荷物のお受け取り後、中身の確認をお願いします。</p>
+				  </li>
+				  <li>
+				    <p class="lessonflowimg"><img src="https://image.raku-uru.jp/01/8476/726/flow4_1621480674514.jpg" alt="レッスン"></p>
+				    <h3>④レッスン</h3>
+				    <p>動画とレシピを観ながらお好きなタイミングでレッスンスタート！</p>
+				  </li>
+			  </ul>
+		  </div>
+		  <p class="morelink"><a href="https://gokan-shokuraku-shop.com/item-list?categoryId=27742">オンラインレッスン一覧</a></p>
+	  </div>
+  </section>
+  <section id="osouzai" class="inner generalsec">
+	  <h2 class="maintitle pcleft">五感食楽の手づくり</h2>
+	  <p class="categoryinfo">旬の恵みをさっと料理して、おすそ分けするのが大好きな小平が、<br class="pc">いろんな人に味わってもらいたいという思いからお惣菜屋さんを始めました。<br>美味しいをシェアしてハッピーな気持ちになってもらえたら嬉しいです。</p>
+	  <h3 class="title_border"><span>日常</span></h3>
+	  
+	  
+	  
+<!-- ▼▼▼ 日常 ▼▼▼ --> 	  
+	  <ul class="product04">
+		  <li>
+		    <p><a href="https://gokan-shokuraku-shop.com/item-detail/395163"><img src="https://image.raku-uru.jp/01/8476/41/EC920B5D-9892-445F-98FD-DBA1F1714989_1591941515803.jpeg" alt="色白さん（ちりめん山椒白味噌）"></a></p>
+		    <h3 class="name"><a href="https://gokan-shokuraku-shop.com/item-detail/395163">色白さん（ちりめん山椒白味噌）</a></h3>
+		    <p class="price">1,080円<span>(税込)</span></p>
+		  </li>
+		  <li>
+		    <p><a href="https://gokan-shokuraku-shop.com/item-detail/845331"><img src="https://image.raku-uru.jp/01/8476/633/244767DB-98B9-4F2C-944E-1476F9E8BA1B_1619426060650.jpeg" alt="おっ酢（万能酢）レシピ付き"></a></p>
+		    <h3 class="name"><a href="https://gokan-shokuraku-shop.com/item-detail/845331">おっ酢（万能酢）レシピ付き</a></h3>
+		    <p class="price">1,080円<span>(税込)</span></p>
+		  </li>
+		  <li>
+		    <p><a href="https://gokan-shokuraku-shop.com/item-detail/645610"><img src="https://image.raku-uru.jp/01/8476/401/IMG_2218_1591675582479_1604645950943.JPG" alt="有田産　青キャビア（山椒の塩煮）小袋入り 40g"></a></p>
+		    <h3 class="name"><a href="https://gokan-shokuraku-shop.com/item-detail/645610">有田産　青キャビア（山椒の塩煮）小袋入り 40g</a></h3>
+		    <p class="price">850円<span>(税込)</span></p>
+		  </li>
+		  <li>
+		    <p><a href="https://gokan-shokuraku-shop.com/item-detail/845337"><img src="https://image.raku-uru.jp/01/8476/628/3EC5E9C5-1442-4276-85AC-06C26DAB499B_1619425631820.jpeg" alt="安心だし400cc 3セット"></a></p>
+		    <h3 class="name"><a href="https://gokan-shokuraku-shop.com/item-detail/845337">安心だし400cc 3セット</a></h3>
+		    <p class="price">1,300円<span>(税込)</span></p>
+		  </li>
+	  </ul>
+<!-- ▲▲▲ 日常 ▲▲▲ --> 	  
+
+
+	  
+	  <h3 class="title_border"><span>季節</span></h3>
+
+
+
+<!-- ▼▼▼ 季節 ▼▼▼ --> 	  
+	  <ul class="product04">
+		  <li>
+		    <p><a href="https://gokan-shokuraku-shop.com/item-detail/738787"><img src="https://image.raku-uru.jp/01/8476/100/IMG_2909_1592880868308.jpg" alt="幸せのお精進ポタージュ　6月はキャベツとうすいえんどうです。　200ml"></a></p>
+		    <h3 class="name"><a href="https://gokan-shokuraku-shop.com/item-detail/738787">幸せのお精進ポタージュ　6月はキャベツとうすいえんどうです。200ml</a></h3>
+		    <p class="price">545円<span>(税込)</span></p>
+		  </li>
+		  <li>
+		    <p><a href="https://gokan-shokuraku-shop.com/item-detail/863873"><img src="https://image.raku-uru.jp/01/8476/91/IMG_2856_1592718629759.jpg" alt="水なすのお薬味和え"></a></p>
+		    <h3 class="name"><a href="https://gokan-shokuraku-shop.com/item-detail/863873">水なすのお薬味和え</a></h3>
+		    <p class="price">1,080円<span>(税込)</span></p>
+		  </li>
+		  <li>
+		    <p><a href="https://gokan-shokuraku-shop.com/item-detail/399069"><img src="https://image.raku-uru.jp/01/8476/94/IMG_2820_1592718954404.jpg" alt="古漬けの切込み和え"></a></p>
+		    <h3 class="name"><a href="https://gokan-shokuraku-shop.com/item-detail/399069">古漬けの切込み和え</a></h3>
+		    <p class="price">1,080円<span>(税込)</span></p>
+		  </li>		  
+	  </ul>
+<!-- ▲▲▲ 季節 ▲▲▲ --> 	  
+	  
+	  
+	  
+	  <p class="morelink"><a href="https://gokan-shokuraku-shop.com/item-list?categoryId=27743">五感食楽の手作り一覧</a></p>
+  </section>
+  <section id="product" class="generalsec">
+	  <div class="inner">
+		  <h2 class="maintitle pcleft">あるとうれしい台所の味方</h2>
+		  <p class="categoryinfo">上質なものを妥協せず、真剣にものづくりに取り組んでいる職人さんを心から尊敬します。<br>作り手の思いが詰まった食材をどう生かすかは僭越ながらも私の役目だと思っています。<br class="pc">今や私のお料理に欠かすことのできない、厳選した食材を自信を持ってお届けします。</p>
+		  <h3 class="title_border"><span>調味料・京の食材など</span></h3>
+		  
+		  
+		  
+<!-- ▼▼▼ 調味料・京の食材など ▼▼▼ -->		  
+		  <ul class="product04">
+			  <li>
+			    <p><a href="https://gokan-shokuraku-shop.com/item-detail/852348"><img src="https://image.raku-uru.jp/01/8476/660/04893123-47B0-4ECF-A7A6-0789F0C076E5_1620018244770.jpeg" alt="乾燥わかめ"></a></p>
+			    <h3 class="name"><a href="https://gokan-shokuraku-shop.com/item-detail/852348">乾燥わかめ</a></h3>
+			    <p class="price">650円<span>(税込)</span></p>
+			  </li>	
+			  <li>
+			    <p><a href="https://gokan-shokuraku-shop.com/item-detail/574725"><img src="https://image.raku-uru.jp/01/8476/283/B15AD642-A6B0-4868-AEB8-44EA29EF6800_1601398710490.jpeg" alt="ポルトガル　マリソル自然海塩　トラディショナル　顆粒　500g"></a></p>
+			    <h3 class="name"><a href="https://gokan-shokuraku-shop.com/item-detail/574725">ポルトガル　マリソル自然海塩　トラディショナル　顆粒　500g</a></h3>
+			    <p class="price">864円<span>(税込)</span></p>
+			  </li>	
+			  <li>
+			    <p><a href="https://gokan-shokuraku-shop.com/item-detail/428841"><img src="https://image.raku-uru.jp/01/8476/193/image_1594041453274.png" alt="トヨチーニさんの干し椎茸（3～4cm）"></a></p>
+			    <h3 class="name"><a href="https://gokan-shokuraku-shop.com/item-detail/428841">トヨチーニさんの干し椎茸（3～4cm）</a></h3>
+			    <p class="price">630円<span>(税込)</span></p>
+			  </li>	
+			  <li>
+			    <p><a href="https://gokan-shokuraku-shop.com/item-detail/448467"><img src="https://image.raku-uru.jp/01/8476/215/2657E830-5303-4433-9D31-FE4491EB756D_1595864800124.jpeg" alt="京都美山　うちゅうの夜明け　マヨネーズ"></a></p>
+			    <h3 class="name"><a href="https://gokan-shokuraku-shop.com/item-detail/448467">京都美山　うちゅうの夜明け　マヨネーズ</a></h3>
+			    <p class="price">1,987円<span>(税込)</span></p>
+			  </li>	 			  
+		  </ul>
+<!-- ▲▲▲ 調味料・京の食材など ▲▲▲ --> 		  
+		  
+
+		  
+		  <p class="morelink"><a href="https://gokan-shokuraku-shop.com/item-list?categoryId=27744">あるとうれしい台所の味方一覧</a></p>
+	  </div>
+  </section>
+  <section id="shidashi" class="inner generalsec">
+	  <h2 class="maintitle pcleft">仕出し</h2>
+	  <p class="categoryinfo">始まりは「年配の両親のために、晩御飯作ってもらえないかしら」の一言から。<br>私の母の年老いた時を想像し、お野菜たっぷり、お椀の中に旬が盛り込まれ、<br class="pc">わあ！と喜ぶ母の顔を想い、作り始めました。<br class="pc">今ではご自身へのご褒美のために頼まれるご常連さんも。</p>
+	  <h3 class="title_border"><span>日替わり惣菜7品など</span></h3>
+
+
+
+<!-- ▼▼▼ 日替わり惣菜7品など ▼▼▼ -->		  
+	  <ul class="product04">
+		  <li>
+		    <p><a href="https://gokan-shokuraku-shop.com/item-detail/848075"><img src="https://image.raku-uru.jp/01/8476/652/9E710C7A-FFD8-49BD-A2AF-619954F64FFA_1619760633478.jpeg" alt="6月仕出しまとめ買い"></a></p>
+		    <h3 class="name"><a href="https://gokan-shokuraku-shop.com/item-detail/848075">6月仕出しまとめ買い</a></h3>
+		    <p class="price">55,800円<span>(税込)</span></p>
+		  </li>
+		  <li>
+		    <p><a href="https://gokan-shokuraku-shop.com/item-detail/810037"><img src="https://image.raku-uru.jp/01/8476/640/unnamed-1_1619709932532.jpg" alt="【６月７日発送】仕出し（2人前7品）"></a></p>
+		    <h3 class="name"><a href="https://gokan-shokuraku-shop.com/item-detail/810037">【６月７日発送】仕出し（2人前7品）</a></h3>
+		    <p class="price">12,000円<span>(税込)</span></p>
+		  </li>
+		  <li>
+		    <p><a href="https://gokan-shokuraku-shop.com/item-detail/809976"><img src="https://image.raku-uru.jp/01/8476/642/unnamed-1_1619710200805.jpg" alt="【6月10日発送】仕出し（2人前7品）"></a></p>
+		    <h3 class="name"><a href="https://gokan-shokuraku-shop.com/item-detail/809976">【6月10日発送】仕出し（2人前7品）</a></h3>
+		    <p class="price">12,000円<span>(税込)</span></p>
+		  </li>
+		  <li>
+		    <p><a href="https://gokan-shokuraku-shop.com/item-detail/762361"><img src="https://image.raku-uru.jp/01/8476/646/unnamed-1_1619710408877.jpg" alt="【5月30日発送】仕出し（2人前7品）"></a></p>
+		    <h3 class="name"><a href="https://gokan-shokuraku-shop.com/item-detail/848075">【5月30日発送】仕出し（2人前7品）</a></h3>
+		    <p class="price">12,000円<span>(税込)</span></p>
+		  </li>
+	  </ul>
+<!-- ▲▲▲ 日替わり惣菜7品など ▲▲▲ -->
+	  
+	  
+	  
+	  
+	  <div class="shidashiflow">
+		  <h3 class="title_bottomborder">五感食楽の仕出しの特徴</h3>
+		  <ul class="shidashiflowlist">
+			  <li>
+			    <p class="shidashiflowimg"><img src="https://image.raku-uru.jp/01/8476/725/feature1_1621480674153.png" alt="管理栄養士監修"><span class="featurenum"><img src="https://image.raku-uru.jp/01/8476/757/num1_1621120345206_1621995497621.png" alt="1"></span></p>
+			    <h3>管理栄養士監修</h3>
+			    <p>減塩、調味料にもこだわり、体が喜ぶ、安心して食べられるおかずに仕上げています。</p>
+			  </li>
+			  <li>
+			    <p class="shidashiflowimg"><img src="https://image.raku-uru.jp/01/8476/730/feature2_1621486807802.png" alt="食材は常時30種類以上"><span class="featurenum"><img src="https://image.raku-uru.jp/01/8476/754/num2_1621120344991_1621995496841.png" alt="2"></span></p>
+			    <h3>食材は常時<br class="sp">30種類以上</h3>
+			    <p>召し上がるたびに旬を味わえ、季節の移ろいを感じいていただける食材をふんだんに使用。</p>
+			  </li>
+			  <li>
+			    <p class="shidashiflowimg"><img src="https://image.raku-uru.jp/01/8476/723/feature3_1621480673359.png" alt="京都のお味をご自宅で"><span class="featurenum"><img src="https://image.raku-uru.jp/01/8476/755/num3_1621120344741_1621995497097.png" alt="3"></span></p>
+			    <h3>京都のお味を<br class="sp">ご自宅で</h3>
+			    <p>優しい甘さの白味噌など京都の知恵を生かした食べ飽きないお味付けにしています。</p>
+			  </li>
+			  <li>
+			    <p class="shidashiflowimg"><img src="https://image.raku-uru.jp/01/8476/722/feature4_1621480672976.png" alt="面倒な調理は一切不要"><span class="featurenum"><img src="https://image.raku-uru.jp/01/8476/756/num4_1621120344467_1621995497363.png" alt="4"></span></p>
+			    <h3>面倒な調理は<br class="sp">一切不要</h3>
+			    <p>温めるだけですぐに本格的なお料理がお召し上がりいただけます。</p>
+			  </li>
+		  </ul>
+	  </div>
+	  <p class="morelink"><a href="https://gokan-shokuraku-shop.com/item-list?categoryId=29119">仕出し一覧</a></p>
+  </section>
+  <section id="profile" class="generalsec">
+	  <div class="inner">
+		  <p class="profileimg"><img src="https://image.raku-uru.jp/01/8476/688/kohirayasuko_1621401389597.jpg" alt="小平泰子"></p>
+		  <div class="profiletext">
+		    <h2 class="profilename">小平 泰子<span>Kohira Yasuko</span></h2>
+		    <p>2003年 小平泰子料理教室を京都三条に、2013年 東京日本橋に開校。<br>料理教室以外に雑誌、新聞などの連載、企業様へのレシピ開発など。<br>2018年 二条城のそばに小さな工場を設立。惣菜製造業を主としたちりめん山椒の販売や仕出しを開始。<br>2020年 調理キットやお惣菜をオンラインで販売できるように。教室に行かなくても日本各地で受講できると好評を得ている。</p>
+		    <p>主な所持資格は調理師免許、JSA日本ソムリエ協会認定ソムリエ。<br>
+著書に「京都おかず菜時記」「季節の野菜と果物でかんたんおつまみ」「旬を楽しむおとなの献立12カ月」（京阪神エルマガジン社）がある</p>
+        <p class="corporatesitelink"><a href="https://gokan-shokuraku.com/" target="_blank">小平泰子料理教室コーポレートサイトはこちら</a></p>
+		  </div>
+	  </div>
+  </section>
+  <section id="book" class="inner generalsec">
+	  <h3 class="title_border"><span>書籍</span></h3>
+
+
+
+<!-- ▼▼▼ 書籍 ▼▼▼ -->		  
+	  <ul class="product04">
+		  <li>
+		    <p><a href="https://gokan-shokuraku-shop.com/item-detail/400950"><img src="https://image.raku-uru.jp/01/8476/765/kantanotsumami_1622008939700.jpg" alt="季節の野菜と果物でかんたんおつまみ（サイン入り）"></a></p>
+		    <h3 class="name"><a href="https://gokan-shokuraku-shop.com/item-detail/400950">季節の野菜と果物でかんたんおつまみ（サイン入り）</a></h3>
+		    <p class="price">1,650円<span>(税込)</span></p>
+		  </li>
+		  <li>
+		    <p><a href="https://gokan-shokuraku-shop.com/item-detail/399073"><img src="https://image.raku-uru.jp/01/8476/759/otonanokondate_1622006470567.jpg" alt="旬を楽しむおとなの献立12ヵ月（サイン入り）"></a></p>
+		    <h3 class="name"><a href="https://gokan-shokuraku-shop.com/item-detail/399073">旬を楽しむおとなの献立12ヵ月（サイン入り）</a></h3>
+		    <p class="price">1,980円<span>(税込)</span></p>
+		  </li>
+		  <li>
+		    <p><a href="https://gokan-shokuraku-shop.com/item-detail/400951"><img src="https://image.raku-uru.jp/01/8476/761/kyoutookazu_1622006471491.jpg" alt="京都おかず菜時記 五感食楽 季節のしたく（サイン入り）"></a></p>
+		    <h3 class="name"><a href="https://gokan-shokuraku-shop.com/item-detail/400951">京都おかず菜時記 五感食楽 季節のしたく（サイン入り）</a></h3>
+		    <p class="price">1,430円<span>(税込)</span></p>
+		  </li>
+	  </ul>
+<!-- ▲▲▲ 書籍 ▲▲▲ -->	  
+	  
+	  
+	  
+  </section>
+  <section id="instagram" class="inner generalsec">
+	  <h3 class="title_border en"><span>INSTAGRAM</span></h3>
+	  
+	  
+	  
+	  
+<!-- ▼▼▼ INSTAGRAM ▼▼▼ -->  
+	  <ul class="instagramlist flexlist">
+		  <li><a href="https://www.instagram.com/p/B8-9sRqFzSP/" target="_blank"><img src="https://image.raku-uru.jp/01/8476/703/insta1_1621401397403.jpg" alt="小平料理教室インスタグラム"></a></li>
+		  <li><a href="https://www.instagram.com/p/Bop8y3qHsQ9/" target="_blank"><img src="https://image.raku-uru.jp/01/8476/701/insta2_1621401396327.jpg" alt="小平料理教室インスタグラム"></a></li>
+		  <li><a href="https://www.instagram.com/p/Ba-7PhkDIEc/" target="_blank"><img src="https://image.raku-uru.jp/01/8476/702/insta3_1621401397051.jpg" alt="小平料理教室インスタグラム"></a></li>
+		  <li><a href="https://www.instagram.com/p/Bp1K6VAHhpM/" target="_blank"><img src="https://image.raku-uru.jp/01/8476/697/insta4_1621401394499.jpg" alt="小平料理教室インスタグラム"></a></li>
+		  <li><a href="https://www.instagram.com/p/BGDj6USx717/" target="_blank"><img src="https://image.raku-uru.jp/01/8476/700/insta5_1621401395877.jpg" alt="小平料理教室インスタグラム"></a></li>
+		  <li><a href="https://www.instagram.com/p/Bkyk3y6gDuP/" target="_blank"><img src="https://image.raku-uru.jp/01/8476/698/insta6_1621401395012.jpg" alt="小平料理教室インスタグラム"></a></li>
+		  <li><a href="https://www.instagram.com/p/BkBpjhRgpA0/" target="_blank"><img src="https://image.raku-uru.jp/01/8476/699/insta7_1621401395470.jpg" alt="小平料理教室インスタグラム"></a></li>
+		  <li><a href="https://www.instagram.com/p/Bbd2slsjQ2a/" target="_blank"><img src="https://image.raku-uru.jp/01/8476/692/insta8_1621401391233.jpg" alt="小平料理教室インスタグラム"></a></li>
+		  <li><a href="https://www.instagram.com/p/CLNgcG7sudm/" target="_blank"><img src="https://image.raku-uru.jp/01/8476/696/insta9_1621401393986.jpg" alt="小平料理教室インスタグラム"></a></li>
+		  <li><a href="https://www.instagram.com/p/BkeD8aHgj8o/" target="_blank"><img src="https://image.raku-uru.jp/01/8476/695/insta10_1621401393644.jpg" alt="小平料理教室インスタグラム"></a></li>
+		  <li><a href="https://www.instagram.com/p/BhxVwxLgg0s/" target="_blank"><img src="https://image.raku-uru.jp/01/8476/694/insta11_1621401393193.jpg" alt="小平料理教室インスタグラム"></a></li>
+		  <li><a href="https://www.instagram.com/p/Bd6hjicjxbr/" target="_blank"><img src="https://image.raku-uru.jp/01/8476/693/insta12_1621401391691.jpg" alt="小平料理教室インスタグラム"></a></li>
+		  <li><a href="https://www.instagram.com/p/BR4lybQgpRv/" target="_blank"><img src="https://image.raku-uru.jp/01/8476/691/insta13_1621401390743.jpg" alt="小平料理教室インスタグラム"></a></li>
+		  <li><a href="https://www.instagram.com/p/CM6Jnt0MbGN/" target="_blank"><img src="https://image.raku-uru.jp/01/8476/690/insta14_1621401390342.jpg" alt="小平料理教室インスタグラム"></a></li>
+		  <li><a href="https://www.instagram.com/p/BPCCNr1jg6N/" target="_blank"><img src="https://image.raku-uru.jp/01/8476/689/insta15_1621401389959.jpg" alt="小平料理教室インスタグラム"></a></li>
+	  </ul>
+<!-- ▲▲▲ INSTAGRAM ▲▲▲ -->	  
+	  
+	  
+	  
+	  
+	  <p class="morelink"><a href="https://www.instagram.com/yasukokohiragokan/" target="_blank">read more</a></p>
+  </section>
+</div>
+<!-- /.main -->
